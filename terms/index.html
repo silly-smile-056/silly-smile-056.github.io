@@ -1,1 +1,916 @@
-terms
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Terms of Service - Funky Smiles Live Wallpapers HD</title>
+
+  <style>
+    :root {
+      --pink: #ff3cac;
+      --yellow: #ffe600;
+      --purple: #8b5cf6;
+      --blue: #22d3ee;
+      --green: #a3ff12;
+      --red: #ff4d5a;
+
+      --text: #292638;
+      --muted: #716b82;
+      --bg: #faf8ff;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+
+      color: var(--text);
+
+      background:
+        radial-gradient(circle at 10% 10%, #ffd9ef 0, transparent 25%),
+        radial-gradient(circle at 90% 20%, #d9f8ff 0, transparent 25%),
+        radial-gradient(circle at 50% 100%, #eee0ff 0, transparent 30%),
+        var(--bg);
+
+      line-height: 1.75;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      padding: 75px 20px 110px;
+
+      text-align: center;
+      color: #fff;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ff3cac 0%,
+          #8b5cf6 48%,
+          #22d3ee 100%
+        );
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+
+      border-radius: 50%;
+
+      background: rgba(255, 255, 255, .16);
+    }
+
+    .hero::before {
+      width: 190px;
+      height: 190px;
+
+      left: -75px;
+      top: -75px;
+    }
+
+    .hero::after {
+      width: 270px;
+      height: 270px;
+
+      right: -110px;
+      bottom: -150px;
+    }
+
+    .smile {
+      position: relative;
+      z-index: 1;
+
+      width: 86px;
+      height: 86px;
+
+      margin: 0 auto 18px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 28px;
+
+      background: #fff;
+
+      font-size: 50px;
+
+      box-shadow:
+        0 14px 35px rgba(50, 20, 80, .22);
+
+      transform: rotate(-5deg);
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+
+      margin: 0;
+
+      font-size: 42px;
+      font-weight: 900;
+
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      position: relative;
+      z-index: 1;
+
+      max-width: 680px;
+
+      margin: 12px auto 0;
+
+      font-size: 17px;
+
+      opacity: .96;
+    }
+
+    .container {
+      max-width: 900px;
+
+      margin: -55px auto 60px;
+
+      padding: 0 18px;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    .content {
+      background: var(--card);
+
+      border: 1px solid rgba(139, 92, 246, .12);
+
+      border-radius: 30px;
+
+      padding: 46px;
+
+      box-shadow:
+        0 20px 60px rgba(70, 40, 110, .12);
+    }
+
+    .badge {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 7px;
+
+      padding: 8px 15px;
+
+      border-radius: 999px;
+
+      color: #7545a0;
+
+      background: #f8efff;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 40px 0 13px;
+
+      font-size: 24px;
+
+      line-height: 1.3;
+
+      color: #302a42;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h2::before {
+      content: "✦";
+
+      display: inline-block;
+
+      margin-right: 9px;
+
+      color: var(--pink);
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .info-card {
+      margin: 22px 0;
+
+      padding: 22px 24px;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #fff0f8,
+          #f1edff
+        );
+
+      border: 1px solid #eadcf6;
+    }
+
+    .highlight {
+      padding: 24px;
+
+      margin: 22px 0;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #effff0,
+          #fff6df
+        );
+
+      border-left: 5px solid var(--green);
+    }
+
+    .rule {
+      padding: 18px 20px;
+
+      margin: 12px 0;
+
+      border-radius: 16px;
+
+      background: #faf8ff;
+    }
+
+    .rule strong {
+      color: #7654a7;
+    }
+
+    .footer {
+      text-align: center;
+
+      padding: 0 20px 45px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    .footer .faces {
+      font-size: 25px;
+
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 650px) {
+
+      .hero {
+        padding: 55px 20px 90px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .content {
+        padding: 30px 22px;
+
+        border-radius: 24px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="smile">
+      😈
+    </div>
+
+    <h1>
+      Terms of Service
+    </h1>
+
+    <p>
+      Funky Smiles Live Wallpapers HD ·
+      Keep it funky, keep it fun ✨
+    </p>
+
+  </section>
+
+
+  <main class="container">
+
+    <article class="content">
+
+
+      <div class="badge">
+        📜 Terms · Updated October 6, 2026
+      </div>
+
+
+      <p>
+
+        Welcome to
+        <strong>Funky Smiles Live Wallpapers HD</strong>!
+
+        These Terms of Service describe the rules and conditions
+        for using our mobile application.
+
+      </p>
+
+
+      <p>
+
+        By downloading, accessing, or using Funky Smiles Live
+        Wallpapers HD, you agree to these Terms.
+
+        If you do not agree with any part of these Terms,
+        please stop using the application.
+
+      </p>
+
+
+      <!-- USING THE APP -->
+
+      <h2>
+        Using the App
+      </h2>
+
+
+      <p>
+
+        Funky Smiles Live Wallpapers HD provides a collection
+        of colorful, funny, spooky, funky, and animated
+        wallpapers designed to personalize the appearance
+        of your supported device.
+
+      </p>
+
+
+      <p>
+
+        You may use the application for your personal,
+        non-commercial purposes, subject to these Terms and
+        applicable laws.
+
+      </p>
+
+
+      <div class="highlight">
+
+        <strong>
+          😈 The simple rule:
+        </strong>
+
+        <br>
+
+        Explore the wallpapers, enjoy the animations,
+        personalize your screen — just don't misuse the
+        application or its content.
+
+      </div>
+
+
+      <!-- WALLPAPER CONTENT -->
+
+      <h2>
+        Wallpaper Content
+      </h2>
+
+
+      <p>
+
+        Wallpapers, animations, images, graphics, characters,
+        visual effects, and other materials available through
+        the application may be protected by copyright,
+        trademark, or other intellectual property rights.
+
+      </p>
+
+
+      <p>
+
+        Unless explicitly stated otherwise, content provided
+        through Funky Smiles Live Wallpapers HD is intended
+        for personal use within the functionality provided
+        by the application.
+
+      </p>
+
+
+      <p>
+
+        You may not reproduce, redistribute, resell,
+        sublicense, commercially exploit, systematically
+        copy, extract, or publicly distribute application
+        content without appropriate permission.
+
+      </p>
+
+
+      <!-- LIVE WALLPAPERS -->
+
+      <h2>
+        Live & Animated Wallpapers
+      </h2>
+
+
+      <p>
+
+        The application may provide animated or live wallpaper
+        functionality on supported devices.
+
+      </p>
+
+
+      <p>
+
+        Availability and behavior of live wallpapers may vary
+        depending on your device model, operating system,
+        manufacturer settings, battery settings, and other
+        technical limitations.
+
+      </p>
+
+
+      <div class="info-card">
+
+        <strong>
+          📱 Device compatibility
+        </strong>
+
+        <br>
+
+        Some live wallpaper features may not work identically
+        on every device. We cannot guarantee compatibility
+        with every Android device or operating system version.
+
+      </div>
+
+
+      <!-- DEVICE -->
+
+      <h2>
+        Your Device & Permissions
+      </h2>
+
+
+      <p>
+
+        Some features may require access to certain device
+        capabilities, such as storage, media, or wallpaper
+        functionality, in order to save, select, or apply
+        wallpaper content.
+
+      </p>
+
+
+      <p>
+
+        You are responsible for granting or denying these
+        permissions.
+
+        If a required permission is denied, some features
+        may not work as intended.
+
+      </p>
+
+
+      <!-- ADVERTISING -->
+
+      <h2>
+        Advertisements
+      </h2>
+
+
+      <p>
+
+        Funky Smiles Live Wallpapers HD may be supported by
+        advertisements provided by third-party advertising
+        partners.
+
+      </p>
+
+
+      <p>
+
+        Advertisements may appear in different areas of the
+        application and may change over time.
+
+        We do not guarantee the availability, accuracy,
+        suitability, or content of advertisements displayed
+        by third-party advertising providers.
+
+      </p>
+
+
+      <div class="info-card">
+
+        <strong>
+          📢 About third-party ads
+        </strong>
+
+        <br>
+
+        Any interaction you have with an advertisement is
+        between you and the relevant advertiser or advertising
+        provider.
+
+        Please review their applicable terms and policies
+        before engaging with third-party offers.
+
+      </div>
+
+
+      <!-- PROHIBITED -->
+
+      <h2>
+        Prohibited Activities
+      </h2>
+
+
+      <p>
+
+        When using Funky Smiles Live Wallpapers HD,
+        you agree not to:
+
+      </p>
+
+
+      <div class="rule">
+
+        <strong>
+          🚫 Abuse the service
+        </strong>
+
+        <br>
+
+        Attempt to interfere with, damage, overload,
+        disable, or disrupt the application or its
+        supporting services.
+
+      </div>
+
+
+      <div class="rule">
+
+        <strong>
+          🔓 Circumvent restrictions
+        </strong>
+
+        <br>
+
+        Attempt to bypass security mechanisms, usage
+        restrictions, advertising mechanisms, licensing
+        mechanisms, or other technical limitations.
+
+      </div>
+
+
+      <div class="rule">
+
+        <strong>
+          🤖 Automated misuse
+        </strong>
+
+        <br>
+
+        Use bots, scripts, crawlers, scraping tools,
+        or automated systems to access or collect
+        application content in an unauthorized manner.
+
+      </div>
+
+
+      <div class="rule">
+
+        <strong>
+          📦 Unauthorized redistribution
+        </strong>
+
+        <br>
+
+        Copy, extract, redistribute, resell, or commercially
+        exploit wallpapers or other application content
+        without appropriate authorization.
+
+      </div>
+
+
+      <div class="rule">
+
+        <strong>
+          ⚠️ Illegal use
+        </strong>
+
+        <br>
+
+        Use the application for activities that violate
+        applicable laws or regulations.
+
+      </div>
+
+
+      <!-- THIRD PARTY -->
+
+      <h2>
+        Third-Party Services
+      </h2>
+
+
+      <p>
+
+        The application may rely on third-party services
+        for advertising, analytics, crash reporting,
+        content delivery, hosting, or other technical
+        functionality.
+
+      </p>
+
+
+      <p>
+
+        Third-party services operate independently and may
+        have their own terms, policies, and conditions.
+
+        Your use of those services may therefore be subject
+        to their respective agreements.
+
+      </p>
+
+
+      <!-- AVAILABILITY -->
+
+      <h2>
+        Availability of the App
+      </h2>
+
+
+      <p>
+
+        We aim to keep Funky Smiles Live Wallpapers HD
+        available and working smoothly, but we cannot
+        promise that the application will always be
+        available, uninterrupted, or completely error-free.
+
+      </p>
+
+
+      <p>
+
+        Features, wallpaper collections, animations,
+        advertisements, and other parts of the application
+        may be changed, updated, suspended, or removed
+        at any time.
+
+      </p>
+
+
+      <!-- UPDATES -->
+
+      <h2>
+        Updates
+      </h2>
+
+
+      <p>
+
+        We may release updates to improve performance,
+        add new wallpapers, introduce features, fix bugs,
+        improve compatibility, or address security issues.
+
+      </p>
+
+
+      <p>
+
+        Some older versions of the application may stop
+        being supported after an update becomes available.
+
+      </p>
+
+
+      <!-- INTELLECTUAL PROPERTY -->
+
+      <h2>
+        Intellectual Property
+      </h2>
+
+
+      <p>
+
+        The Funky Smiles Live Wallpapers HD application,
+        including its design, branding, interface, software,
+        original graphics, and original materials, may be
+        protected by applicable intellectual property laws.
+
+      </p>
+
+
+      <p>
+
+        Nothing in these Terms grants you ownership of the
+        application or its intellectual property.
+
+      </p>
+
+
+      <!-- DISCLAIMER -->
+
+      <h2>
+        Disclaimer
+      </h2>
+
+
+      <p>
+
+        Funky Smiles Live Wallpapers HD is provided on an
+        "as available" and "as is" basis to the extent
+        permitted by applicable law.
+
+      </p>
+
+
+      <p>
+
+        We make reasonable efforts to provide a useful,
+        entertaining, and enjoyable experience, but we do
+        not guarantee that the application will meet every
+        individual expectation or that all content will
+        always be accurate, complete, compatible, or
+        available.
+
+      </p>
+
+
+      <!-- LIABILITY -->
+
+      <h2>
+        Limitation of Liability
+      </h2>
+
+
+      <p>
+
+        To the maximum extent permitted by applicable law,
+        we will not be responsible for indirect, incidental,
+        special, consequential, or similar damages arising
+        from your use of, or inability to use, the
+        application.
+
+      </p>
+
+
+      <p>
+
+        This includes issues resulting from third-party
+        services, network interruptions, device problems,
+        operating system limitations, battery behavior,
+        or content provided by external parties, except
+        where liability cannot legally be excluded.
+
+      </p>
+
+
+      <!-- CHANGES -->
+
+      <h2>
+        Changes to These Terms
+      </h2>
+
+
+      <p>
+
+        We may update these Terms of Service from time to
+        time.
+
+        Changes may be made to reflect new features,
+        improvements, legal requirements, or changes to
+        how the application works.
+
+      </p>
+
+
+      <p>
+
+        The latest version will always be published on
+        this page.
+
+        Your continued use of Funky Smiles Live Wallpapers
+        HD after changes are published means that you accept
+        the updated Terms.
+
+      </p>
+
+
+      <!-- TERMINATION -->
+
+      <h2>
+        Termination
+      </h2>
+
+
+      <p>
+
+        You may stop using Funky Smiles Live Wallpapers HD
+        at any time by uninstalling the application from
+        your device.
+
+      </p>
+
+
+      <p>
+
+        We may also restrict or discontinue access to the
+        application when reasonably necessary, including
+        in cases of abuse, security concerns, technical
+        issues, or legal requirements.
+
+      </p>
+
+
+      <!-- ACCEPTANCE -->
+
+      <h2>
+        Acceptance
+      </h2>
+
+
+      <p>
+
+        By continuing to use Funky Smiles Live Wallpapers HD,
+        you acknowledge that you have read, understood, and
+        agreed to these Terms of Service.
+
+      </p>
+
+
+      <div class="highlight">
+
+        <strong>
+          🌈 Thanks for using Funky Smiles Live Wallpapers HD!
+        </strong>
+
+        <br>
+
+        Keep your screen colorful, funky, spooky, and
+        full of personality. 😈😀✨
+
+      </div>
+
+
+    </article>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="faces">
+      😀 😜 😈 👻 ✨
+    </div>
+
+    Funky Smiles Live Wallpapers HD ·
+    Made for more expressive screens
+
+  </footer>
+
+
+</body>
+
+</html>
