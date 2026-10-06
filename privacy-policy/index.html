@@ -1,1 +1,1043 @@
-privacy-policy
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy - Funky Smiles Live Wallpapers HD</title>
+
+  <style>
+    :root {
+      --pink: #ff3cac;
+      --purple: #8b5cf6;
+      --blue: #22d3ee;
+      --green: #a3ff12;
+      --yellow: #ffe600;
+      --red: #ff4d5a;
+
+      --text: #292638;
+      --muted: #716b82;
+      --bg: #faf8ff;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+
+      color: var(--text);
+
+      background:
+        radial-gradient(circle at 10% 10%, #ffd9ef 0, transparent 25%),
+        radial-gradient(circle at 90% 15%, #d9f8ff 0, transparent 25%),
+        radial-gradient(circle at 50% 100%, #eee0ff 0, transparent 30%),
+        var(--bg);
+
+      line-height: 1.75;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      padding: 75px 20px 110px;
+
+      text-align: center;
+      color: #fff;
+
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.15), transparent 20%),
+        linear-gradient(
+          135deg,
+          #ff3cac 0%,
+          #8b5cf6 48%,
+          #22d3ee 100%
+        );
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,.15);
+    }
+
+    .hero::before {
+      width: 190px;
+      height: 190px;
+      left: -75px;
+      top: -75px;
+    }
+
+    .hero::after {
+      width: 270px;
+      height: 270px;
+      right: -110px;
+      bottom: -150px;
+    }
+
+    .smile {
+      position: relative;
+      z-index: 1;
+
+      width: 86px;
+      height: 86px;
+
+      margin: 0 auto 18px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 28px;
+
+      background: #fff;
+
+      font-size: 50px;
+
+      box-shadow:
+        0 14px 35px rgba(50, 20, 80, .22);
+
+      transform: rotate(-5deg);
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+
+      margin: 0;
+
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      position: relative;
+      z-index: 1;
+
+      max-width: 680px;
+
+      margin: 12px auto 0;
+
+      font-size: 17px;
+
+      opacity: .96;
+    }
+
+    .container {
+      max-width: 900px;
+
+      margin: -55px auto 60px;
+
+      padding: 0 18px;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    .content {
+      background: var(--card);
+
+      border: 1px solid rgba(139, 92, 246, .12);
+
+      border-radius: 30px;
+
+      padding: 46px;
+
+      box-shadow:
+        0 20px 60px rgba(70, 40, 110, .12);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+
+      padding: 8px 15px;
+
+      border-radius: 999px;
+
+      color: #7545a0;
+
+      background: #f8efff;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 40px 0 13px;
+
+      font-size: 24px;
+
+      line-height: 1.3;
+
+      color: #302a42;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h2::before {
+      content: "✦";
+
+      display: inline-block;
+
+      margin-right: 9px;
+
+      color: var(--pink);
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #7654c7;
+
+      font-weight: 700;
+
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      font-size: 17px;
+
+      color: #554e66;
+    }
+
+    .info-card {
+      margin: 22px 0;
+
+      padding: 22px 24px;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #fff0f8,
+          #f1edff
+        );
+
+      border: 1px solid #eadcf6;
+    }
+
+    .info-card strong {
+      color: #70459a;
+    }
+
+    .service {
+      display: flex;
+
+      gap: 14px;
+
+      align-items: center;
+
+      padding: 15px 17px;
+
+      margin: 10px 0;
+
+      border-radius: 16px;
+
+      background: #faf8ff;
+    }
+
+    .service-icon {
+      width: 42px;
+      height: 42px;
+
+      flex: 0 0 42px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 13px;
+
+      background: #fff;
+
+      font-size: 21px;
+
+      box-shadow:
+        0 4px 12px rgba(80, 50, 100, .08);
+    }
+
+    .highlight {
+      padding: 24px;
+
+      margin: 22px 0;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f0fff0,
+          #fff6df
+        );
+
+      border-left: 5px solid var(--green);
+    }
+
+    .footer {
+      text-align: center;
+
+      padding: 0 20px 45px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    .footer .faces {
+      font-size: 25px;
+
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 650px) {
+
+      .hero {
+        padding: 55px 20px 90px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .content {
+        padding: 30px 22px;
+
+        border-radius: 24px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="smile">
+      😈
+    </div>
+
+    <h1>
+      Funky Smiles Live Wallpapers HD
+    </h1>
+
+    <p>
+      A little privacy for your funky, colorful, and mischievous screen ✨
+    </p>
+
+  </section>
+
+
+  <main class="container">
+
+    <article class="content">
+
+      <div class="badge">
+        🔒 Privacy Policy · Updated October 6, 2026
+      </div>
+
+
+      <p class="intro">
+
+        Welcome to
+        <strong>Funky Smiles Live Wallpapers HD</strong>!
+
+        We created this app to make your phone more expressive
+        with colorful, funny, spooky, funky, and animated
+        smile wallpapers.
+
+      </p>
+
+
+      <p>
+
+        We respect your privacy and want to keep things simple.
+
+        This Privacy Policy explains what information may be
+        handled when you use the app and how that information
+        may be used by the app and its supporting services.
+
+      </p>
+
+
+      <!-- INFORMATION -->
+
+      <h2>
+        What Information We Collect
+      </h2>
+
+      <p>
+
+        Funky Smiles Live Wallpapers HD is primarily a wallpaper
+        customization application.
+
+        Most of the app's basic features can be used without
+        creating an account or directly submitting personal
+        information to us.
+
+      </p>
+
+
+      <div class="info-card">
+
+        <strong>😈 In short:</strong><br>
+
+        We do not require you to create an account or provide
+        your name, phone number, or personal profile information
+        simply to browse and use the wallpaper features.
+
+      </div>
+
+
+      <p>
+
+        Depending on the features you use and the third-party
+        services integrated into the app, certain technical,
+        advertising, or usage information may be processed
+        automatically.
+
+      </p>
+
+
+      <!-- DEVICE -->
+
+      <h2>
+        Device & Usage Information
+      </h2>
+
+      <p>
+
+        To help the application work properly, improve
+        performance, understand general usage, and diagnose
+        technical issues, certain technical information may
+        be processed.
+
+      </p>
+
+
+      <p>
+        This may include:
+      </p>
+
+
+      <ul>
+
+        <li>
+          Device model and manufacturer
+        </li>
+
+        <li>
+          Operating system and app version
+        </li>
+
+        <li>
+          Approximate technical information about your device
+        </li>
+
+        <li>
+          IP address or similar network information
+        </li>
+
+        <li>
+          App interaction and usage information
+        </li>
+
+        <li>
+          Crash and diagnostic information
+        </li>
+
+        <li>
+          Advertising identifiers, where applicable
+        </li>
+
+      </ul>
+
+
+      <p>
+
+        This information may be used to maintain application
+        stability, diagnose crashes, improve performance,
+        understand general usage patterns, and provide
+        relevant advertising where applicable.
+
+      </p>
+
+
+      <!-- WALLPAPER -->
+
+      <h2>
+        Wallpapers, Media & Device Access
+      </h2>
+
+
+      <p>
+
+        Funky Smiles Live Wallpapers HD may require access to
+        device media, storage, or related system functionality
+        when you choose features that involve saving,
+        selecting, applying, or managing wallpaper content.
+
+      </p>
+
+
+      <div class="highlight">
+
+        <strong>
+          🖼️ Your choice, your wallpaper.
+        </strong>
+
+        <br>
+
+        Access to device media or storage is used when required
+        for a wallpaper-related action that you initiate.
+
+        We do not use your personal photos to build a personal
+        profile or sell your personal images.
+
+      </div>
+
+
+      <p>
+
+        Images or media selected or saved through the app may
+        remain on your device according to the permissions,
+        operating system behavior, and storage settings of
+        your device.
+
+      </p>
+
+
+      <!-- LIVE WALLPAPER -->
+
+      <h2>
+        Live Wallpaper Functionality
+      </h2>
+
+
+      <p>
+
+        The app provides animated and live wallpaper features
+        that may interact with supported system wallpaper
+        functionality.
+
+      </p>
+
+
+      <p>
+
+        When you choose to apply a live wallpaper, the selected
+        wallpaper content is used to provide the wallpaper
+        experience on your supported device.
+
+      </p>
+
+
+      <p>
+
+        The app does not need to access your personal messages,
+        contacts, or unrelated personal content in order to
+        provide the basic live wallpaper experience.
+
+      </p>
+
+
+      <!-- ADVERTISING -->
+
+      <h2>
+        Advertising
+      </h2>
+
+
+      <p>
+
+        To support the development, operation, and maintenance
+        of Funky Smiles Live Wallpapers HD, the app may display
+        advertisements provided by third-party advertising
+        partners.
+
+      </p>
+
+
+      <div class="service">
+
+        <div class="service-icon">
+          📢
+        </div>
+
+        <div>
+
+          <strong>
+            Google AdMob
+          </strong>
+
+          <br>
+
+          <span>
+            Advertising delivery, measurement, and related
+            advertising services.
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <p>
+
+        Advertising providers may process information such as
+        device information, advertising identifiers, IP address,
+        approximate location, and interactions with
+        advertisements.
+
+      </p>
+
+
+      <p>
+
+        The exact information processed may depend on your
+        device settings, applicable laws, consent choices,
+        and the configuration of the advertising provider.
+
+      </p>
+
+
+      <p>
+
+        You can learn more about Google's privacy practices here:
+
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Privacy & Terms
+        </a>.
+
+      </p>
+
+
+      <!-- ANALYTICS -->
+
+      <h2>
+        Analytics & App Performance
+      </h2>
+
+
+      <p>
+
+        We may use analytics and diagnostic services to
+        understand general usage patterns, improve the app,
+        and identify technical problems.
+
+      </p>
+
+
+      <div class="service">
+
+        <div class="service-icon">
+          📊
+        </div>
+
+        <div>
+
+          <strong>
+            Firebase Analytics
+          </strong>
+
+          <br>
+
+          <span>
+            Helps us understand general app usage and improve
+            features and the overall experience.
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="service">
+
+        <div class="service-icon">
+          🛠️
+        </div>
+
+        <div>
+
+          <strong>
+            Crash & Diagnostic Services
+          </strong>
+
+          <br>
+
+          <span>
+            Helps identify crashes, errors, and technical
+            problems.
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <p>
+
+        These services may automatically receive technical
+        information from your device when you use the
+        application.
+
+      </p>
+
+
+      <p>
+
+        More information about Firebase's privacy practices
+        is available at:
+
+        <a
+          href="https://firebase.google.com/support/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Firebase Privacy
+        </a>.
+
+      </p>
+
+
+      <!-- THIRD PARTY -->
+
+      <h2>
+        Third-Party Services
+      </h2>
+
+
+      <p>
+
+        Funky Smiles Live Wallpapers HD may rely on third-party
+        technologies to provide advertising, analytics,
+        crash reporting, measurement, or other supporting
+        functionality.
+
+      </p>
+
+
+      <p>
+
+        These third-party providers may process information
+        according to their own privacy policies.
+
+        We recommend reviewing the privacy policies of these
+        services to understand how they handle information.
+
+      </p>
+
+
+      <ul>
+
+        <li>
+
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Privacy Policy
+          </a>
+
+        </li>
+
+        <li>
+
+          <a
+            href="https://support.google.com/admob/answer/6128543"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google AdMob Privacy Information
+          </a>
+
+        </li>
+
+        <li>
+
+          <a
+            href="https://firebase.google.com/support/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Firebase Privacy Information
+          </a>
+
+        </li>
+
+      </ul>
+
+
+      <!-- COOKIES -->
+
+      <h2>
+        Cookies & Similar Technologies
+      </h2>
+
+
+      <p>
+
+        Funky Smiles Live Wallpapers HD itself does not operate
+        a traditional website-cookie system inside the mobile
+        application.
+
+      </p>
+
+
+      <p>
+
+        However, third-party SDKs used for advertising,
+        analytics, measurement, or other functionality may use
+        identifiers and technologies that work in a similar
+        way to cookies.
+
+      </p>
+
+
+      <!-- USE -->
+
+      <h2>
+        How We Use Information
+      </h2>
+
+
+      <p>
+
+        Information processed through the app and its supporting
+        services may be used to:
+
+      </p>
+
+
+      <ul>
+
+        <li>
+          Provide and maintain the wallpaper experience;
+        </li>
+
+        <li>
+          Provide live and animated wallpaper functionality;
+        </li>
+
+        <li>
+          Save, select, or apply wallpaper content when requested;
+        </li>
+
+        <li>
+          Display and measure advertisements;
+        </li>
+
+        <li>
+          Understand general app usage;
+        </li>
+
+        <li>
+          Detect crashes and technical problems;
+        </li>
+
+        <li>
+          Improve application performance and features;
+        </li>
+
+        <li>
+          Protect the application against abuse or misuse;
+        </li>
+
+        <li>
+          Comply with applicable legal requirements.
+        </li>
+
+      </ul>
+
+
+      <!-- SECURITY -->
+
+      <h2>
+        Data Security
+      </h2>
+
+
+      <p>
+
+        We take reasonable measures to protect information
+        processed in connection with our Services.
+
+      </p>
+
+
+      <p>
+
+        However, no electronic storage system, mobile device,
+        or Internet transmission can be guaranteed to be
+        completely secure.
+
+        Therefore, absolute security cannot be guaranteed.
+
+      </p>
+
+
+      <!-- CHILDREN -->
+
+      <h2>
+        Children's Privacy
+      </h2>
+
+
+      <p>
+
+        Funky Smiles Live Wallpapers HD is not specifically
+        directed toward children under 13, and we do not
+        knowingly request personal information from children
+        under 13.
+
+      </p>
+
+
+      <p>
+
+        If we become aware that personal information from a
+        child under 13 has been collected through our Services
+        in circumstances where such collection is not permitted,
+        we will take reasonable steps to address and delete it
+        where applicable.
+
+      </p>
+
+
+      <!-- EXTERNAL LINKS -->
+
+      <h2>
+        External Links
+      </h2>
+
+
+      <p>
+
+        The app or related content may occasionally contain
+        links to external websites or services.
+
+        Those websites and services are operated by third
+        parties and have their own privacy practices.
+
+      </p>
+
+
+      <p>
+
+        We encourage you to review the privacy policies of any
+        external service you choose to visit.
+
+      </p>
+
+
+      <!-- DATA RETENTION -->
+
+      <h2>
+        Data Retention
+      </h2>
+
+
+      <p>
+
+        We do not require you to create an account for the
+        basic wallpaper experience.
+
+        Information processed by third-party providers such as
+        advertising and analytics services may be retained
+        according to their respective policies and applicable
+        legal requirements.
+
+      </p>
+
+
+      <!-- CHANGES -->
+
+      <h2>
+        Changes to This Policy
+      </h2>
+
+
+      <p>
+
+        We may occasionally update this Privacy Policy to
+        reflect changes to the application, third-party
+        services, or applicable legal and privacy requirements.
+
+      </p>
+
+
+      <p>
+
+        When changes are made, the updated version will be
+        published on this page together with a new effective
+        date.
+
+      </p>
+
+
+    </article>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="faces">
+      😀 😜 😈 👻
+    </div>
+
+    Funky Smiles Live Wallpapers HD ·
+    Made for more expressive screens
+
+  </footer>
+
+
+</body>
+
+</html>
