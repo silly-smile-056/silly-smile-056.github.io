@@ -1,1 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Funky Smiles Live Wallpapers HD</title>
+
+  <meta
+    name="description"
+    content="Funky Smiles Live Wallpapers HD brings colorful, silly, spooky, evil, and neon animated wallpapers to your phone."
+  />
+
+  <meta name="theme-color" content="#09090f" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #09090f;
+      --bg-soft: #11111b;
+      --card: rgba(255, 255, 255, 0.055);
+      --card-border: rgba(255, 255, 255, 0.1);
+
+      --pink: #ff3cac;
+      --purple: #8b5cf6;
+      --cyan: #22d3ee;
+      --green: #a3ff12;
+      --yellow: #ffe600;
+      --red: #ff3b30;
+
+      --text: #ffffff;
+      --muted: #b8b8c8;
+
+      --radius: 28px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Nunito", sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(255, 60, 172, 0.16), transparent 28%),
+        radial-gradient(circle at 85% 15%, rgba(34, 211, 238, 0.13), transparent 25%),
+        radial-gradient(circle at 50% 80%, rgba(139, 92, 246, 0.12), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.035;
+      background-image:
+        linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px);
+      background-size: 45px 45px;
+      mask-image: linear-gradient(to bottom, black, transparent 80%);
+      z-index: -1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      min-height: 760px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 90px 0 100px;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      opacity: 0.35;
+    }
+
+    .hero::before {
+      width: 360px;
+      height: 360px;
+      background: var(--pink);
+      left: -150px;
+      top: 80px;
+    }
+
+    .hero::after {
+      width: 400px;
+      height: 400px;
+      background: var(--cyan);
+      right: -180px;
+      bottom: 20px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .emoji {
+      font-size: 76px;
+      line-height: 1;
+      margin-bottom: 24px;
+      display: inline-block;
+      animation: float 4s ease-in-out infinite;
+      filter: drop-shadow(0 0 30px rgba(255, 60, 172, 0.5));
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(-3deg);
+      }
+      50% {
+        transform: translateY(-12px) rotate(3deg);
+      }
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #e7e7f2;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(12px);
+    }
+
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--green);
+      border-radius: 50%;
+      box-shadow: 0 0 14px var(--green);
+    }
+
+    h1 {
+      font-family: "Baloo 2", cursive;
+      font-size: clamp(52px, 9vw, 92px);
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: -2px;
+      margin-bottom: 28px;
+
+      background: linear-gradient(
+        100deg,
+        #fff 10%,
+        #ff63bd 38%,
+        #a78bfa 65%,
+        #4de7ff 90%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(19px, 3vw, 25px);
+      font-weight: 700;
+      color: #f0f0f7;
+      margin-bottom: 18px;
+    }
+
+    .hero-description {
+      max-width: 720px;
+      margin: 0 auto 34px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 25px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 15px;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    .button-primary {
+      color: #0b0b10;
+      background: linear-gradient(135deg, #ff4db8, #a78bfa);
+      box-shadow: 0 12px 35px rgba(255, 60, 172, .25);
+    }
+
+    .button-secondary {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      color: white;
+    }
+
+    /* SMILE SHOWCASE */
+
+    .smile-showcase {
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .smile-card {
+      width: 145px;
+      height: 175px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 70px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    }
+
+    .smile-card:nth-child(1) {
+      background: linear-gradient(145deg, #ff3cac, #784cff);
+      transform: rotate(-5deg);
+    }
+
+    .smile-card:nth-child(2) {
+      background: linear-gradient(145deg, #a3ff12, #11c98b);
+      transform: rotate(3deg);
+    }
+
+    .smile-card:nth-child(3) {
+      background: linear-gradient(145deg, #ff3b30, #6412d7);
+      transform: rotate(-2deg);
+    }
+
+    .smile-card:nth-child(4) {
+      background: linear-gradient(145deg, #20d9ff, #6b35ff);
+      transform: rotate(5deg);
+    }
+
+    .smile-card span {
+      position: relative;
+      z-index: 2;
+      filter: drop-shadow(0 8px 10px rgba(0,0,0,.3));
+    }
+
+    .smile-card::before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.12);
+      top: -55px;
+      right: -40px;
+    }
+
+    /* SECTION */
+
+    section {
+      padding: 105px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 55px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--pink);
+      font-weight: 900;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-family: "Baloo 2", cursive;
+      font-size: clamp(38px, 6vw, 58px);
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* FEATURES */
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature {
+      padding: 32px;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(15px);
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,.22);
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 30px;
+      background: rgba(255,255,255,.07);
+      margin-bottom: 22px;
+    }
+
+    .feature h3 {
+      font-family: "Baloo 2", cursive;
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* STYLES */
+
+    .styles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .style-item {
+      min-height: 180px;
+      padding: 24px;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .style-item::before {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      top: -70px;
+      right: -50px;
+      background: rgba(255,255,255,.16);
+    }
+
+    .style-item .style-emoji {
+      font-size: 48px;
+      margin-bottom: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .style-item h3 {
+      font-family: "Baloo 2", cursive;
+      font-size: 23px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .style-item p {
+      color: rgba(255,255,255,.75);
+      font-size: 13px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .style-pink {
+      background: linear-gradient(145deg, #e62e92, #732cff);
+    }
+
+    .style-green {
+      background: linear-gradient(145deg, #68c200, #007f65);
+    }
+
+    .style-red {
+      background: linear-gradient(145deg, #ff4a3d, #790019);
+    }
+
+    .style-blue {
+      background: linear-gradient(145deg, #18bfff, #1738b9);
+    }
+
+    .style-purple {
+      background: linear-gradient(145deg, #a855f7, #45128f);
+    }
+
+    .style-dark {
+      background: linear-gradient(145deg, #252532, #08080d);
+    }
+
+    .style-yellow {
+      background: linear-gradient(145deg, #ffd600, #e65b00);
+    }
+
+    .style-cyan {
+      background: linear-gradient(145deg, #19e8df, #0754a5);
+    }
+
+    /* SETUP */
+
+    .setup-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .setup-copy h2 {
+      text-align: left;
+    }
+
+    .setup-copy p {
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+    }
+
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.07);
+    }
+
+    .step-number {
+      flex: 0 0 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      font-weight: 900;
+    }
+
+    .step span {
+      color: #ededf5;
+      font-weight: 700;
+    }
+
+    .phone {
+      width: 280px;
+      height: 560px;
+      margin: auto;
+      padding: 10px;
+      border-radius: 42px;
+      background: linear-gradient(145deg, #30303d, #08080d);
+      box-shadow:
+        0 40px 100px rgba(0,0,0,.55),
+        0 0 80px rgba(255,60,172,.12);
+      border: 2px solid rgba(255,255,255,.12);
+      position: relative;
+    }
+
+    .phone::before {
+      content: "";
+      position: absolute;
+      width: 85px;
+      height: 24px;
+      background: #050507;
+      border-radius: 20px;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+    }
+
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      border-radius: 34px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,.18), transparent 15%),
+        linear-gradient(145deg, #ff3cac, #7028ff 48%, #0b1628);
+      position: relative;
+    }
+
+    .phone-screen::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 75% 70%, rgba(0,255,255,.22), transparent 20%),
+        radial-gradient(circle at 30% 80%, rgba(255,255,0,.15), transparent 20%);
+    }
+
+    .big-smile {
+      font-size: 130px;
+      position: relative;
+      z-index: 2;
+      filter: drop-shadow(0 15px 20px rgba(0,0,0,.4));
+      animation: smileFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes smileFloat {
+      0%, 100% {
+        transform: translateY(0) rotate(-4deg);
+      }
+      50% {
+        transform: translateY(-15px) rotate(4deg);
+      }
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 90px 30px;
+      text-align: center;
+      border-radius: 40px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.12), transparent 25%),
+        radial-gradient(circle at 80% 80%, rgba(34,211,238,.15), transparent 30%),
+        linear-gradient(135deg, rgba(255,60,172,.22), rgba(116,65,255,.22));
+      border: 1px solid rgba(255,255,255,.12);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cta h2 {
+      max-width: 750px;
+      margin: 0 auto 18px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+
+    .cta-smiles {
+      font-size: 40px;
+      letter-spacing: 10px;
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 45px 0;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: #8f8fa1;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: #dcdce6;
+    }
+
+    .footer-links {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .features {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .styles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .setup-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .setup-copy {
+        text-align: center;
+      }
+
+      .setup-copy h2 {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 75px 0 80px;
+      }
+
+      .emoji {
+        font-size: 62px;
+      }
+
+      h1 {
+        font-size: 54px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .smile-showcase {
+        gap: 10px;
+        margin-top: 45px;
+      }
+
+      .smile-card {
+        width: 78px;
+        height: 100px;
+        border-radius: 20px;
+        font-size: 40px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .styles-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .style-item {
+        min-height: 155px;
+        padding: 18px;
+      }
+
+      .style-item .style-emoji {
+        font-size: 40px;
+      }
+
+      .phone {
+        width: 245px;
+        height: 490px;
+      }
+
+      .big-smile {
+        font-size: 110px;
+      }
+
+      .cta {
+        padding: 65px 20px;
+        border-radius: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="emoji">😈</div>
+
+        <div class="badge">
+          FUNKY • FUNNY • SPOOKY
+        </div>
+
+        <h1>Funky Smiles<br>Live Wallpapers HD</h1>
+
+        <p class="hero-subtitle">
+          Make your phone smile back at you! 😈😀
+        </p>
+
+        <p class="hero-description">
+          Bring your screen to life with colorful, silly, spooky, evil,
+          and neon animated wallpapers. Discover bold smiles, creepy
+          expressions, funky characters, and eye-catching designs made
+          to give your phone a personality of its own.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#features" class="button button-primary">
+            😀 Explore Wallpapers
+          </a>
+
+          <a href="#styles" class="button button-secondary">
+            🎨 Explore Styles
+          </a>
+        </div>
+
+        <div class="smile-showcase">
+          <div class="smile-card">
+            <span>😀</span>
+          </div>
+
+          <div class="smile-card">
+            <span>😜</span>
+          </div>
+
+          <div class="smile-card">
+            <span>😈</span>
+          </div>
+
+          <div class="smile-card">
+            <span>👻</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">WHY FUNKY SMILES?</div>
+
+        <h2>A Smile For Every Mood</h2>
+
+        <p>
+          Turn an ordinary screen into something colorful, funny,
+          mysterious, spooky, or completely wicked.
+        </p>
+      </div>
+
+      <div class="features">
+
+        <div class="feature">
+          <div class="feature-icon">😀</div>
+
+          <h3>HD & 4K Wallpapers</h3>
+
+          <p>
+            Enjoy sharp, high-quality wallpapers with vivid colors,
+            glowing details, and smooth animation designed to look
+            fantastic on modern phone screens.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">😈</div>
+
+          <h3>Funky & Wicked</h3>
+
+          <p>
+            Discover goofy grins, evil smiles, creepy faces,
+            neon expressions, dark designs, and playful characters
+            for a look that stands out.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">✨</div>
+
+          <h3>Animated Live Wallpapers</h3>
+
+          <p>
+            Give your screen a dynamic new personality with
+            animated wallpapers featuring smooth movement and
+            eye-catching visual effects.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🎨</div>
+
+          <h3>Colorful Styles</h3>
+
+          <p>
+            Explore electric blue, glowing purple, neon green,
+            dark red, colorful characters, and many more visual
+            styles.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">👻</div>
+
+          <h3>Silly to Spooky</h3>
+
+          <p>
+            Choose something funny and goofy today or switch to
+            a darker, scarier, Halloween-inspired style whenever
+            you want.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+
+          <h3>Quick & Easy Setup</h3>
+
+          <p>
+            Browse, preview, choose your favorite smile, and apply
+            your wallpaper in just a few simple steps.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- STYLES -->
+  <section id="styles">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">EXPLORE YOUR VIBE</div>
+
+        <h2>Pick Your Smile Style</h2>
+
+        <p>
+          From colorful and playful to dark and wicked,
+          find a wallpaper that matches your personality.
+        </p>
+      </div>
+
+      <div class="styles-grid">
+
+        <div class="style-item style-pink">
+          <div class="style-emoji">😜</div>
+          <h3>Silly & Funny</h3>
+          <p>Goofy smiles and playful expressions.</p>
+        </div>
+
+        <div class="style-item style-green">
+          <div class="style-emoji">😈</div>
+          <h3>Wicked</h3>
+          <p>Evil grins with a mischievous attitude.</p>
+        </div>
+
+        <div class="style-item style-red">
+          <div class="style-emoji">👹</div>
+          <h3>Scary</h3>
+          <p>Dark faces and creepy expressions.</p>
+        </div>
+
+        <div class="style-item style-blue">
+          <div class="style-emoji">😎</div>
+          <h3>Neon</h3>
+          <p>Electric colors and glowing aesthetics.</p>
+        </div>
+
+        <div class="style-item style-purple">
+          <div class="style-emoji">👻</div>
+          <h3>Spooky</h3>
+          <p>Mysterious designs for darker moods.</p>
+        </div>
+
+        <div class="style-item style-dark">
+          <div class="style-emoji">🖤</div>
+          <h3>Dark</h3>
+          <p>Bold wallpapers with a darker vibe.</p>
+        </div>
+
+        <div class="style-item style-yellow">
+          <div class="style-emoji">🤪</div>
+          <h3>Funky</h3>
+          <p>Colorful characters full of personality.</p>
+        </div>
+
+        <div class="style-item style-cyan">
+          <div class="style-emoji">😁</div>
+          <h3>Colorful</h3>
+          <p>Bright smiles made to stand out.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SETUP -->
+  <section>
+    <div class="container">
+
+      <div class="setup-wrapper">
+
+        <div class="setup-copy">
+
+          <div class="eyebrow">SUPER SIMPLE</div>
+
+          <h2>Give Your Screen a New Personality</h2>
+
+          <p>
+            Getting a new look takes only a few taps.
+            Explore the collection, preview a wallpaper,
+            choose your favorite design, and enjoy your
+            new animated screen.
+          </p>
+
+          <div class="steps">
+
+            <div class="step">
+              <div class="step-number">1</div>
+              <span>Explore the wallpaper collection</span>
+            </div>
+
+            <div class="step">
+              <div class="step-number">2</div>
+              <span>Choose your favorite funky smile</span>
+            </div>
+
+            <div class="step">
+              <div class="step-number">3</div>
+              <span>Preview your wallpaper</span>
+            </div>
+
+            <div class="step">
+              <div class="step-number">4</div>
+              <span>Apply it to your supported screen</span>
+            </div>
+
+            <div class="step">
+              <div class="step-number">5</div>
+              <span>Enjoy your new look! 😈</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="big-smile">😈</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+
+      <div class="cta">
+
+        <div class="cta-smiles">
+          😀 😜 😈 👻
+        </div>
+
+        <h2>
+          Make Your Screen Impossible to Ignore
+        </h2>
+
+        <p>
+          Give your phone more personality with bold, playful,
+          colorful, creepy, and wicked live wallpapers.
+          Find the smile that matches your vibe.
+        </p>
+
+        <a href="#features" class="button button-primary">
+          😈 Discover Funky Smiles
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <p>
+        <strong>Funky Smiles Live Wallpapers HD</strong>
+      </p>
+
+      <p>
+        Make your phone smile back at you! 😀
+      </p>
+
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+
+      <p style="margin-top: 18px;">
+        © 2026 Funky Smiles Live Wallpapers HD. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
